@@ -47,5 +47,23 @@ console.log(canDrink);
  console.log(retailCompanies);
 
 // map
+ const companyNames = companies.map(function(company){
+     return `${company.name},${company.start}, ${company.end}`;
+ });
+
+ console.log(companyNames);
+
+
+ const ages = age.map(function(age){
+     return age;
+ })
+
+ console.log(ages)
 // sort
 // reduce
+
+const ageSum = age.reduce(function(total,age){
+    return total + age;
+}, 0 );
+
+console.log(ageSum);
